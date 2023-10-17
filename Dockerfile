@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:7
 MAINTAINER liheng<lzheng99@wisc.com>
 
 ENV MYPATH /usr/local
