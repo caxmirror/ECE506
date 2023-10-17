@@ -9,7 +9,7 @@ RUN yum -y install vim
 #安装ifconfig命令查看网络IP
 RUN yum -y install net-tools
 #安装java21及lib库
-RUN yum -y install glibc.i686
+RUN yum -y install glibc
 RUN mkdir /usr/local/java
 #ADD 是相对路径jar,把jdk-21-linux-x64.tar.gz添加到容器中,安装包必须要和Dockerfile 文件在同一位置
 ADD jdk-21_linux-x64_bin.tar.gz /usr/local/java/
