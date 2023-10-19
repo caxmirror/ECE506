@@ -9,9 +9,9 @@ WORKDIR $MYPATH
 #ifconfig
 # RUN yum -y install net-tools
 ADD DockerTest.jar DockerTest1.jar
-RUN bash -c 'touch /DockerTest1.jar'
+RUN bash -c 'touch DockerTest1.jar'
 
-ENTRYPOINT ["java","-jar","/DockerTest1.jar"]
+ENTRYPOINT ["java","-jar","DockerTest1.jar"]
 
 EXPOSE 9998
 
